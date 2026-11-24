@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#000000">
 <title>Mika Moenchmeier</title>
-<meta name="description" content="Mika Moenchmeier builds things that have to work: a self-landing model rocket with thrust vector control, a self-hosted home server, and more.">
+<meta name="description" content="Mika Moenchmeier: Head Lifeguard with Surf Life Saving New Zealand who builds things end to end, from a self-landing model rocket to a self-hosted server and CleanSwap, an iPhone app.">
 <meta property="og:title" content="Mika Moenchmeier">
 <meta property="og:description" content="Mika Moenchmeier builds things end to end: a self-landing model rocket, a home server, and CleanSwap, an iPhone app.">
 <meta property="og:url" content="https://mikamoenchmeier.com/">
@@ -53,6 +53,7 @@ main{position:relative;z-index:10}
   border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:14px;
   opacity:0;transform:translateY(16px);transition:opacity .35s ease,transform .35s ease}
 .card.on{opacity:1;transform:none;pointer-events:auto}
+.card{max-height:calc(100dvh - 150px);overflow-y:auto;scrollbar-width:thin}
 .card:not(.on){pointer-events:none}
 .flat .card{pointer-events:auto}
 .kicker{margin:0;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:600}
@@ -158,6 +159,67 @@ h2{margin:0;font-size:clamp(28px,3vw,40px);line-height:1.05;font-weight:780;font
 .flat .card{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.card,.toast{transition:none}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://mikamoenchmeier.com/#person",
+  "name": "Mika Moenchmeier",
+  "url": "https://mikamoenchmeier.com/",
+  "mainEntityOfPage": "https://mikamoenchmeier.com/",
+  "description": "Head Lifeguard with Surf Life Saving New Zealand and builder working end to end across CAD, 3D printing, electronics and code. Open to technical roles in mechatronics, electronics and engineering.",
+  "jobTitle": "Head Lifeguard",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Surf Life Saving New Zealand",
+    "url": "https://www.surflifesaving.org.nz/"
+  },
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Hawke's Bay, New Zealand"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Taikura Rudolf Steiner School"
+  },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "National Lifeguard School (Advanced Lifeguard Award)",
+    "recognizedBy": {
+      "@type": "Organization",
+      "name": "Surf Life Saving New Zealand"
+    }
+  },
+  "award": [
+    "Hawke's Bay U19 Lifeguard of the Year",
+    "Most lifeguard hours in Hawke's Bay, 2023/24 season",
+    "Young Achievers Award"
+  ],
+  "knowsLanguage": [
+    "en",
+    "de"
+  ],
+  "knowsAbout": [
+    "Surf lifesaving",
+    "Inflatable rescue boats",
+    "Rocketry",
+    "Thrust vector control",
+    "CAD",
+    "3D printing",
+    "Embedded systems",
+    "Electronics",
+    "Docker",
+    "Linux",
+    "Networking"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/mikamoenchmeier",
+    "https://www.instagram.com/mikamoenchmeier/",
+    "https://www.youtube.com/@mikamoenchmeier",
+    "https://github.com/mikamoenchmeier"
+  ]
+}
+</script>
 </head>
 <body>
 <!-- Hi, source reader. Hints: poke the logo five times. Old cheat codes work. Lifeguards have one word. Try launch() in the console. -->
@@ -201,9 +263,10 @@ h2{margin:0;font-size:clamp(28px,3vw,40px);line-height:1.05;font-weight:780;font
     <div class="sticky"><div class="card">
       <p class="kicker">Stop 01 · About</p>
       <h2>About</h2>
-      <p class="lede">I’m at home in both New Zealand and Germany, and I’ve always liked working out how things work and then building my own. When I’m not building something I’m usually at the beach: I’ve been a volunteer surf lifeguard for years, and I race inflatable rescue boats.</p>
+      <p class="lede">I grew up between Germany and Hawke’s Bay, New Zealand, speaking both English and German, and I’ve always liked working out how things work and then building my own. I’m open to technical roles, especially in mechatronics, electronics or engineering.</p>
       <div class="extra">
-        <p>Since finishing school in 2025 I’ve been travelling through Asia and Europe, working and volunteering along the way. At school I played first-team hockey, sat on the school board as student representative, and received my school’s Young Achievers Award.</p>
+        <p>I started lifeguarding in 2018 on a German lake and have spent every summer since 2020 on New Zealand beaches. I’m a Head Lifeguard with Surf Life Saving New Zealand, a Patrol Captain, an IRB and Surf Lifeguard Award instructor, and a graduate of National Lifeguard School. I was named Hawke’s Bay U19 Lifeguard of the Year and logged the most lifeguard hours in the region in the 2023/24 season.</p>
+        <p>I finished school at Taikura Rudolf Steiner School in 2025, where I played first-team hockey, was student representative on the school board and received the Young Achievers Award. In 2026 I travelled through Europe and Asia, finishing as a volunteer at the Sumba Hospitality Foundation in Indonesia, where I mentored students preparing for hotel internships.</p>
       </div>
       <button class="toggle" type="button" aria-expanded="false">More</button>
     </div></div>
@@ -261,7 +324,7 @@ h2{margin:0;font-size:clamp(28px,3vw,40px);line-height:1.05;font-weight:780;font
       <p class="kicker">Touchdown · Germany</p>
       <p class="meta-time" id="detime"></p>
       <h2>Get in touch</h2>
-      <p>Working on something interesting, or just want to talk rockets? I’d like to hear from you.</p>
+      <p>I’m open to technical roles in mechatronics, electronics and engineering. Or if you just want to talk rockets, I’d like to hear from you.</p>
       <noscript><p>Email: mika [at] moenchmeier [dot] de</p></noscript>
       <div class="mail"><a id="mailLink" href="#">email</a><button class="pill ghost" id="copy" type="button">Copy</button></div>
       <nav class="links" aria-label="Elsewhere">
