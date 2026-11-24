@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#000000">
 <title>Mika Moenchmeier</title>
-<meta name="description" content="Mika Moenchmeier builds things that have to work: a self-landing model rocket with thrust vector control, a self-hosted home server, and more.">
+<meta name="description" content="Mika Moenchmeier: Head Lifeguard with Surf Life Saving New Zealand who builds things end to end, from a self-landing model rocket to a self-hosted server and CleanSwap, an iPhone app.">
 <meta property="og:title" content="Mika Moenchmeier">
-<meta property="og:description" content="Mika Moenchmeier builds things end to end: a self-landing model rocket, a home server, and this site.">
+<meta property="og:description" content="Mika Moenchmeier builds things end to end: a self-landing model rocket, a home server, and CleanSwap, an iPhone app.">
 <meta property="og:url" content="https://mikamoenchmeier.com/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://mikamoenchmeier.com/og.png">
@@ -53,6 +53,7 @@ main{position:relative;z-index:10}
   border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:14px;
   opacity:0;transform:translateY(16px);transition:opacity .35s ease,transform .35s ease}
 .card.on{opacity:1;transform:none;pointer-events:auto}
+.card{max-height:calc(100dvh - 150px);overflow-y:auto;scrollbar-width:thin}
 .card:not(.on){pointer-events:none}
 .flat .card{pointer-events:auto}
 .kicker{margin:0;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:600}
@@ -158,6 +159,67 @@ h2{margin:0;font-size:clamp(28px,3vw,40px);line-height:1.05;font-weight:780;font
 .flat .card{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.card,.toast{transition:none}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://mikamoenchmeier.com/#person",
+  "name": "Mika Moenchmeier",
+  "url": "https://mikamoenchmeier.com/",
+  "mainEntityOfPage": "https://mikamoenchmeier.com/",
+  "description": "Head Lifeguard with Surf Life Saving New Zealand and builder working end to end across CAD, 3D printing, electronics and code. Open to technical roles in mechatronics, electronics and engineering.",
+  "jobTitle": "Head Lifeguard",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Surf Life Saving New Zealand",
+    "url": "https://www.surflifesaving.org.nz/"
+  },
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Hawke's Bay, New Zealand"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Taikura Rudolf Steiner School"
+  },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "National Lifeguard School (Advanced Lifeguard Award)",
+    "recognizedBy": {
+      "@type": "Organization",
+      "name": "Surf Life Saving New Zealand"
+    }
+  },
+  "award": [
+    "Hawke's Bay U19 Lifeguard of the Year",
+    "Most lifeguard hours in Hawke's Bay, 2023/24 season",
+    "Young Achievers Award"
+  ],
+  "knowsLanguage": [
+    "en",
+    "de"
+  ],
+  "knowsAbout": [
+    "Surf lifesaving",
+    "Inflatable rescue boats",
+    "Rocketry",
+    "Thrust vector control",
+    "CAD",
+    "3D printing",
+    "Embedded systems",
+    "Electronics",
+    "Docker",
+    "Linux",
+    "Networking"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/mikamoenchmeier",
+    "https://www.instagram.com/mikamoenchmeier/",
+    "https://www.youtube.com/@mikamoenchmeier",
+    "https://github.com/mikamoenchmeier"
+  ]
+}
+</script>
 </head>
 <body>
 <!-- Hi, source reader. Hints: poke the logo five times. Old cheat codes work. Lifeguards have one word. Try launch() in the console. -->
@@ -201,9 +263,10 @@ h2{margin:0;font-size:clamp(28px,3vw,40px);line-height:1.05;font-weight:780;font
     <div class="sticky"><div class="card">
       <p class="kicker">Stop 01 · About</p>
       <h2>About</h2>
-      <p class="lede">I’m at home in both New Zealand and Germany, and I’ve always liked working out how things work and then building my own. When I’m not building something I’m usually at the beach: I’ve been a volunteer surf lifeguard for years, and I race inflatable rescue boats.</p>
+      <p class="lede">I grew up between Germany and Hawke’s Bay, New Zealand, speaking both English and German, and I’ve always liked working out how things work and then building my own. I’m open to technical roles, especially in mechatronics, electronics or engineering.</p>
       <div class="extra">
-        <p>Since finishing school in 2025 I’ve been travelling through Asia and Europe, working and volunteering along the way. At school I played first-team hockey, sat on the school board as student representative, and received my school’s Young Achievers Award.</p>
+        <p>I started lifeguarding in 2018 on a German lake and have spent every summer since 2020 on New Zealand beaches. I’m a Head Lifeguard with Surf Life Saving New Zealand, a Patrol Captain, an IRB and Surf Lifeguard Award instructor, and a graduate of National Lifeguard School. I was named Hawke’s Bay U19 Lifeguard of the Year and logged the most lifeguard hours in the region in the 2023/24 season.</p>
+        <p>I finished school at Taikura Rudolf Steiner School in 2025, where I played first-team hockey, was student representative on the school board and received the Young Achievers Award. In 2026 I travelled through Europe and Asia, finishing as a volunteer at the Sumba Hospitality Foundation in Indonesia, where I mentored students preparing for hotel internships.</p>
       </div>
       <button class="toggle" type="button" aria-expanded="false">More</button>
     </div></div>
@@ -243,14 +306,14 @@ h2{margin:0;font-size:clamp(28px,3vw,40px);line-height:1.05;font-weight:780;font
     </div></div>
   </section>
 
-  <section class="stop" id="thissite" data-label="This site">
+  <section class="stop" id="cleanswap" data-label="CleanSwap">
     <div class="sticky"><div class="card">
-      <p class="kicker">Stop 04 · You’re looking at it</p>
-      <h2>This website</h2>
-      <p class="short">A rocket that flies you through my work, built with three.js and AI-assisted coding.</p>
+      <p class="kicker">Stop 04 · In development</p>
+      <h2>CleanSwap</h2>
+      <p class="short">An iPhone app that reads the ingredients on shampoo, sunscreen and the like, and tells you what’s actually in there.</p>
+      <a class="more" href="https://cleanswap.mikamoenchmeier.com" target="_blank" rel="noopener">Visit cleanswap.mikamoenchmeier.com</a>
       <div class="extra">
-        <p>I designed the journey and directed every detail, and built it with AI-assisted coding: plain three.js with no framework, planets generated in code, New Zealand drawn from real coastline coordinates, and an Earth lit by where the sun actually is right now. It’s hosted on Cloudflare.</p>
-        <a class="more" href="https://github.com/mikamoenchmeier/mikamoenchmeier.github.io" target="_blank" rel="noopener">See the source on GitHub</a>
+        <p>Point your phone at a product’s ingredient label, and CleanSwap checks every ingredient against clear rules, explains what each one does, and suggests better swaps that fit your own skin and hair profile. The landing page is live and the iPhone app is being built now.</p>
       </div>
       <button class="toggle" type="button" aria-expanded="false">More</button>
     </div></div>
@@ -261,7 +324,7 @@ h2{margin:0;font-size:clamp(28px,3vw,40px);line-height:1.05;font-weight:780;font
       <p class="kicker">Touchdown · Germany</p>
       <p class="meta-time" id="detime"></p>
       <h2>Get in touch</h2>
-      <p>Working on something interesting, or just want to talk rockets? I’d like to hear from you.</p>
+      <p>I’m open to technical roles in mechatronics, electronics and engineering. Or if you just want to talk rockets, I’d like to hear from you.</p>
       <noscript><p>Email: mika [at] moenchmeier [dot] de</p></noscript>
       <div class="mail"><a id="mailLink" href="#">email</a><button class="pill ghost" id="copy" type="button">Copy</button></div>
       <nav class="links" aria-label="Elsewhere">
@@ -401,9 +464,18 @@ h2{margin:0;font-size:clamp(28px,3vw,40px);line-height:1.05;font-weight:780;font
   const P = [], spinners = [], flags = [], surf = []; let nzN; 
   const glowSphere = (r, col) => new T.Mesh(new T.SphereGeometry(r * 1.13, 32, 20), new T.MeshBasicMaterial({ color: col, transparent: true, opacity: .09, side: T.BackSide, blending: T.AdditiveBlending, depthWrite: false }));
   // faint gold "M" painted on the landing pads
-  const mTex = (() => { const c = document.createElement('canvas'); c.width = c.height = 256; const x = c.getContext('2d');
-    x.fillStyle = '#000'; x.globalAlpha = 1; x.font = '900 210px Archivo, Helvetica, sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
-    x.fillStyle = '#F0C46A'; x.fillText('M', 128, 140); return new T.CanvasTexture(c); })();
+  const mTex = (() => { const c = document.createElement('canvas'); c.width = c.height = 512; const x = c.getContext('2d');
+    const draw = () => {
+      x.clearRect(0, 0, 512, 512);
+      x.font = '900 400px Archivo, Helvetica, sans-serif'; x.textAlign = 'center'; x.textBaseline = 'alphabetic';
+      // centre the glyph by its real outline, not the font's line box
+      const m = x.measureText('M'), h = m.actualBoundingBoxAscent + m.actualBoundingBoxDescent;
+      x.fillStyle = '#F0C46A'; x.fillText('M', 256 + (m.actualBoundingBoxLeft - m.actualBoundingBoxRight) / 2, 256 + h / 2 - m.actualBoundingBoxDescent);
+    };
+    draw();
+    const t = new T.CanvasTexture(c); t.anisotropy = 4;
+    if (document.fonts) document.fonts.ready.then(() => { draw(); t.needsUpdate = true; }); // redraw once Archivo has loaded
+    return t; })();
   const decals = [];
   function mDecal(parent, size, x, y, z, op = .22) {
     const m = new T.Mesh(new T.PlaneGeometry(size, size), new T.MeshBasicMaterial({ map: mTex, transparent: true, opacity: op, depthWrite: false }));
@@ -422,7 +494,7 @@ h2{margin:0;font-size:clamp(28px,3vw,40px);line-height:1.05;font-weight:780;font
   // 0: launch pad
   const pad = new T.Group(); pad.add(hexPad(3, .8, 0x785400)); const padTop = hexPad(2.4, .82, 0x6E6A62); padTop.position.y = .02; pad.add(padTop);
   const trench = new T.Mesh(new T.CylinderGeometry(.55, .55, .84, 6), new T.MeshStandardMaterial({ color: 0x0B0B0C, roughness: 1 })); pad.add(trench); // flame hole under the engine
-  cornerLights(pad, 3 * .96, .42, .07); mDecal(pad, 1.25, -.75, .435, 1.35, .26);
+  cornerLights(pad, 3 * .96, .42, .07); mDecal(pad, 3.6, 0, .436, 0, .42); // big M in the middle of the pad, like the H on a helipad
   // service tower: lattice of steel with a lightning rod and a red light on top
   const steel = new T.MeshStandardMaterial({ color: 0x77777F, roughness: .5, metalness: .6, flatShading: true });
   const armMat = new T.MeshStandardMaterial({ color: 0xD9A441, roughness: .45, metalness: .5, flatShading: true });
@@ -523,16 +595,16 @@ h2{margin:0;font-size:clamp(28px,3vw,40px);line-height:1.05;font-weight:780;font
     const l = label('03  SERVER', 'docker · paperless-ngx'); l.position.set(0, r + 4, 0); g.add(l);
     scene.add(g); P.push({ c: g.position, r, g, n: LAND }); }
 
-  // 4: This site: mint planet ringed by little gold hexagons (the logo)
+  // 4: CleanSwap: mint planet with soap bubbles
   const bubbles = new T.Group();
   { const r = 5, g = new T.Group(); g.position.copy(POS[4]); const body = new T.Mesh(new T.IcosahedronGeometry(r, 3), flat(0x5FB89A, { roughness: .6 })); g.add(body);
     spinners.push({ o: body, axis: LAND, s: -.1 });
-    const hm = new T.MeshStandardMaterial({ color: 0xD9A441, metalness: .6, roughness: .35, flatShading: true });
-    for (let i = 0; i < 16; i++) { const s = new T.Mesh(new T.CylinderGeometry(.35 + Math.random() * .4, .35 + Math.random() * .4, .14, 6), hm); const a = i / 16 * Math.PI * 2 + Math.random() * .2, e = (Math.random() - .5) * 2.2;
-      s.position.set(Math.cos(a) * 7.5, e * 3, Math.sin(a) * 7.5); s.rotation.set(Math.random() * 3, Math.random() * 3, 0); bubbles.add(s); }
+    const bm = new T.MeshStandardMaterial({ color: 0xffffff, emissive: 0x9FE8D0, emissiveIntensity: .35, transparent: true, opacity: .4, roughness: .1, metalness: .1 });
+    for (let i = 0; i < 16; i++) { const s = new T.Mesh(new T.SphereGeometry(.3 + Math.random() * .6, 14, 10), bm); const a = Math.random() * 6.28, e = (Math.random() - .5) * 2.2;
+      s.position.set(Math.cos(a) * 7.5, e * 3, Math.sin(a) * 7.5); bubbles.add(s); }
     g.add(bubbles); spinners.push({ o: bubbles, axis: new T.Vector3(0, 1, 0), s: -.15 });
     addPad(g, r, LAND); g.add(glowSphere(r, 0x8FF0CF));
-    const l = label('04  THIS SITE', 'three.js · cloudflare'); l.position.set(0, r + 3.5, 0); g.add(l);
+    const l = label('04  CLEANSWAP', 'iphone app · in development'); l.position.set(0, r + 3.5, 0); g.add(l);
     scene.add(g); P.push({ c: g.position, r, g, n: LAND }); }
 
   // 5: Earth: real continents (1° land mask), lit by where the sun actually is right now,
@@ -812,7 +884,7 @@ h2{margin:0;font-size:clamp(28px,3vw,40px);line-height:1.05;font-weight:780;font
         else { sa.fallT = undefined; sa.v = 0; sa.a += (0 - sa.a) * (1 - Math.pow(.15, dt)); }
         sa.hinge.rotation.x = -sa.a; }); }
     surf.forEach(w => { const ph = (t * 1.1 - w.phase) % 3.6; w.mat.opacity = ph > 0 && ph < 1.4 ? Math.sin(ph / 1.4 * Math.PI) * .55 : 0; });
-    bubbles.children.forEach((b, i) => { b.position.y += Math.sin(t * .8 + i) * dt * .4; b.rotation.x += dt * .5; b.rotation.z += dt * .3; });
+    bubbles.children.forEach((b, i) => b.position.y += Math.sin(t * .8 + i) * dt * .4);
     blinkers.forEach((l, i) => l.visible = Math.sin(t * 3 + i * 1.7) > -.3);
     flags.forEach(f => { f.children[1].rotation.y = Math.sin(t * 4 + f.userData.wave) * .3; f.children[2].rotation.y = Math.sin(t * 4 + f.userData.wave + .5) * .3; });
     beacons.forEach(bc => bc.material.color.setHex(Math.sin(t * 3.2 + bc.userData.ph) > .2 ? 0xFF2A2A : 0x2A0606));
